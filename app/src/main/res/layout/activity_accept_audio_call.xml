@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/celebrity_full_image_in_background_accept_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/celebrity_image_in_small_rounded_form"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:background="@drawable/circular_shape_for_prank_chat_characters_pics"
+        app:layout_constraintBottom_toBottomOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintEnd_toEndOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintStart_toStartOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintTop_toTopOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/name_of_the_character_tv_accept_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/celebrity_image_in_small_rounded_form"
+        app:layout_constraintStart_toStartOf="@id/celebrity_image_in_small_rounded_form"
+        app:layout_constraintEnd_toEndOf="@id/celebrity_image_in_small_rounded_form"
+        app:layout_constraintBottom_toBottomOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <TextView
+        android:id="@+id/timer_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintEnd_toEndOf="@id/name_of_the_character_tv_accept_call"
+        app:layout_constraintStart_toStartOf="@id/name_of_the_character_tv_accept_call"
+        app:layout_constraintTop_toBottomOf="@id/name_of_the_character_tv_accept_call"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TextView
+        android:id="@+id/call_ended_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call_ended"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintEnd_toEndOf="@id/timer_text_tv"
+        app:layout_constraintStart_toStartOf="@id/timer_text_tv"
+        app:layout_constraintTop_toBottomOf="@id/timer_text_tv"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <ImageView
+        android:id="@+id/decline_icon_accept_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/decline_icon"
+        app:layout_constraintBottom_toBottomOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintEnd_toEndOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintTop_toBottomOf="@id/call_ended_tv" />
+
+    <TextView
+        android:id="@+id/decline_tv_accept_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decline"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/decline_icon_accept_call"
+        app:layout_constraintBottom_toBottomOf="@id/celebrity_full_image_in_background_accept_call"
+        app:layout_constraintStart_toStartOf="@id/decline_icon_accept_call"
+        app:layout_constraintEnd_toEndOf="@id/decline_icon_accept_call"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

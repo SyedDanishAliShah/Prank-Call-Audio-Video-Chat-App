@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view_fake_chat_activity"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056666666" />
+
+    <TextView
+        android:id="@+id/fake_chat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fake_chat"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/video_call_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/video_call_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/voice_call_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/voice_call_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toEndOf="@+id/video_call_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/imageView_character"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/video_call_icon"
+        android:foreground="@drawable/prank_chat_characters_circle_outline"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fake_chat_tv"
+        app:layout_constraintVertical_bias="0.03000002" />
+
+    <TextView
+        android:id="@+id/name_of_character_fake_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/et_type_a_message"
+        app:layout_constraintEnd_toEndOf="@id/imageView_character"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@id/imageView_character"
+        app:layout_constraintTop_toBottomOf="@id/imageView_character"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/online_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/online"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:layout_marginStart="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="@+id/name_of_character_fake_chat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/online_icon"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_character_fake_chat" />
+
+    <ImageView
+        android:id="@+id/online_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/online_icon"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@+id/online_tv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView_character"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_character"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <EditText
+        android:id="@+id/et_type_a_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rectangle"
+        android:hint="@string/type_a_message"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/online_tv"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sender_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_type_a_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/online_tv"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/camera_icon_fake_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_icon_fake_chat"
+        app:layout_constraintBottom_toBottomOf="@id/et_type_a_message"
+        app:layout_constraintEnd_toStartOf="@id/send_message_icon"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@id/et_type_a_message"
+        app:layout_constraintTop_toTopOf="@id/et_type_a_message" />
+
+    <ImageView
+        android:id="@+id/send_message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/send_message_icon"
+        app:layout_constraintBottom_toBottomOf="@id/et_type_a_message"
+        app:layout_constraintEnd_toEndOf="@id/et_type_a_message"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/et_type_a_message"
+        app:layout_constraintTop_toTopOf="@id/et_type_a_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

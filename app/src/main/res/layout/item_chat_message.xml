@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/reply_container">
+
+    <!-- Sender's message ImageView -->
+    <ImageView
+        android:id="@+id/rectangle_for_message_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/rectangle_for_message_fake_chat"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_for_message_sender"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type_a_message_tv_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_for_message_sender"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_for_message_sender"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_for_message_sender"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_message_sender" />
+
+    <TextView
+        android:id="@+id/current_time_tv_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_for_message_sender"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_message_sender"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_for_message_sender" />
+
+    <!-- Receiver's message ImageView -->
+    <ImageView
+        android:id="@+id/rectangle_for_message_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/rectangle_for_message_fake_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toEndOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintTop_toBottomOf="@id/current_time_tv_sender" />
+
+    <TextView
+        android:id="@+id/type_a_message_tv_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_message_receiver" />
+
+    <TextView
+        android:id="@+id/current_time_tv_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_for_message_receiver"
+        app:layout_constraintVertical_bias="0.04" />
+
+   <!-- <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_time_tv_receiver"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/typing_dots_animation" />-->
+
+    <ImageView
+        android:id="@+id/imageView_chat_sender"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_145sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_chat_receiver"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_145sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

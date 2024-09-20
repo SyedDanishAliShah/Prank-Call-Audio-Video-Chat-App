@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/rectangle_no_internet_permission_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_no_internet_permission_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/no_wifi_1_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_wifi_1"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_no_internet_permission_dialog"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_no_internet_permission_dialog"
+        app:layout_constraintStart_toStartOf="@id/rectangle_no_internet_permission_dialog"
+        app:layout_constraintTop_toTopOf="@id/rectangle_no_internet_permission_dialog"
+        app:layout_constraintVertical_bias="0.27000002" />
+
+    <ImageView
+        android:id="@+id/no_internet_please_check_your_internet_connection_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_internet_please_check_your_internet_connection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/no_wifi_1_icon"
+        app:layout_constraintStart_toStartOf="@id/no_wifi_1_icon"
+        app:layout_constraintTop_toBottomOf="@id/no_wifi_1_icon"
+        app:layout_constraintVertical_bias="0.11999999" />
+
+    <ImageView
+        android:id="@+id/try_again_button_no_internet_connection_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/try_again_button_no_internet_connection_dialog"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_no_internet_permission_dialog"
+        app:layout_constraintEnd_toEndOf="@id/no_internet_please_check_your_internet_connection_tv"
+        app:layout_constraintStart_toStartOf="@id/no_internet_please_check_your_internet_connection_tv"
+        app:layout_constraintTop_toBottomOf="@id/no_internet_please_check_your_internet_connection_tv"
+        app:layout_constraintVertical_bias="0.44" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

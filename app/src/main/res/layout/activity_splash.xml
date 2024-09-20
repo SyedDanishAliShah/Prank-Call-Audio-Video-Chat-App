@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_screen_first_face"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/splash_screen_first_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splash_screen_second_face"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/splash_screen_second_face"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/splash_screen_first_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/splash_screen_third_face"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:src="@drawable/splash_screen_third_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splash_screen_fifth_face"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_screen_first_face"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <ImageView
+        android:id="@+id/splash_screen_fourth_face"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/splash_screen_first_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_screen_third_face"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <ImageView
+        android:id="@+id/splash_screen_fifth_face"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:src="@drawable/splash_screen_fifth_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_screen_second_face"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/images_rounding_dots_circle_splash"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/images_rounding_dots_circle_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <ImageView
+        android:id="@+id/first_pic_of_splash_screen"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/first_pic_of_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintEnd_toEndOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/mic_circle_splash_screen"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/mic_circle_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/images_rounding_dots_circle_splash"
+        app:layout_constraintEnd_toEndOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/first_pic_of_splash_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21000001" />
+
+    <ImageView
+        android:id="@+id/mic_splash_screen"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:padding="@dimen/_1sdp"
+        android:src="@drawable/mic_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/mic_circle_splash_screen"
+        app:layout_constraintEnd_toEndOf="@+id/mic_circle_splash_screen"
+        app:layout_constraintStart_toStartOf="@id/mic_circle_splash_screen"
+        app:layout_constraintTop_toTopOf="@id/mic_circle_splash_screen"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <ImageView
+        android:id="@+id/second_picture_splash_screen"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/second_picture_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <ImageView
+        android:id="@+id/message_circle_splash_screen"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/message_circle_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintEnd_toEndOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintTop_toTopOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/message_icon_splash_screen"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:padding="@dimen/_2sdp"
+        android:src="@drawable/message_icon_splash_screen"
+        app:layout_constraintBottom_toBottomOf="@id/message_circle_splash_screen"
+        app:layout_constraintEnd_toEndOf="@id/message_circle_splash_screen"
+        app:layout_constraintStart_toStartOf="@id/message_circle_splash_screen"
+        app:layout_constraintTop_toTopOf="@id/message_circle_splash_screen" />
+
+    <ImageView
+        android:id="@+id/third_picture_splash_screen"
+        android:layout_width="@dimen/_118sdp"
+        android:layout_height="@dimen/_118sdp"
+        android:src="@drawable/third_picture_splash_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_pic_of_splash_screen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/video_call_icon_splash"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/video_call_icon_splash"
+        app:layout_constraintBottom_toBottomOf="@id/images_rounding_dots_circle_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/first_pic_of_splash_screen"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/it_s_prank_tv_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/it_s_prank"
+        android:textColor="@color/blue_color_for_splash_screen_text"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <TextView
+        android:id="@+id/video_audio_chat_lot_s_of_fun_tv_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/video_audio_chat_lot_s_of_fun"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/it_s_prank_tv_splash"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <TextView
+        android:id="@+id/you_can_have_imaginary_friend_to_save_your_intimity_tv_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/you_can_have_imaginary_friend_to_save_your_intimity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_audio_chat_lot_s_of_fun_tv_splash"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ProgressBar
+        android:id="@+id/splash_screen_progress_loader"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_screen_progress_loader"
+        android:progress="0"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_drawable"
+        app:layout_constraintTop_toBottomOf="@id/you_can_have_imaginary_friend_to_save_your_intimity_tv_splash"
+        app:layout_constraintStart_toStartOf="@id/you_can_have_imaginary_friend_to_save_your_intimity_tv_splash"
+        app:layout_constraintEnd_toEndOf="@id/you_can_have_imaginary_friend_to_save_your_intimity_tv_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <TextView
+        android:id="@+id/this_action_might_contain_ads_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_action_might_contain_ads"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_progress_loader"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_progress_loader"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_progress_loader" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_on_boarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

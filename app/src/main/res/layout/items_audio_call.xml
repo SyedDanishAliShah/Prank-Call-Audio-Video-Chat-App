@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/rectangle_for_prank_audio_call_one"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/rectangle_for_prank_audio_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+
+    <ImageView
+        android:id="@+id/voice_call_icon_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/voice_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_for_prank_audio_call_one" />
+
+
+    <TextView
+        android:id="@+id/tap_to_make_voice_call_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_make_voice_call"
+        android:textColor="@color/prank_audio_call_text_color"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintEnd_toStartOf="@id/voice_call_icon_one"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintTop_toTopOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintVertical_bias="0.63999997" />
+
+
+
+    <TextView
+        android:id="@+id/name_of_character_audio_call_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tap_to_make_voice_call_tv_one"
+        app:layout_constraintEnd_toEndOf="@id/tap_to_make_voice_call_tv_one"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@id/tap_to_make_voice_call_tv_one"
+        app:layout_constraintTop_toTopOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintVertical_bias="0.70" />
+
+
+
+    <ImageView
+        android:id="@+id/circle_of_character_of_audio_call_one"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/circle_of_character_of_audio_call"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintEnd_toStartOf="@id/name_of_character_audio_call_one"
+        app:layout_constraintStart_toStartOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintTop_toTopOf="@id/rectangle_for_prank_audio_call_one"
+        app:layout_constraintVertical_bias="0.43" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

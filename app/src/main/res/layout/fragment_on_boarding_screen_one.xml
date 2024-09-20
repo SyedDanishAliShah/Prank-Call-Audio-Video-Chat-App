@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/on_boarding_background"
+    >
+
+    <ImageView
+        android:id="@+id/mobile_image_of_first_on_boarding_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_332sdp"
+        android:src="@drawable/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <ImageView
+        android:id="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_328sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintTop_toTopOf="@+id/mobile_image_of_first_on_boarding_screen" />
+
+    <ImageView
+        android:id="@+id/taylor_swift_circle_pic"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:src="@drawable/taylor_swift_circle_pic"
+        app:layout_constraintBottom_toBottomOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintStart_toStartOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintTop_toTopOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/taylor_swift_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taylor_swift"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/taylor_swift_circle_pic"
+        app:layout_constraintStart_toStartOf="@+id/taylor_swift_circle_pic"
+        app:layout_constraintTop_toBottomOf="@+id/taylor_swift_circle_pic"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/incoming_voice_call_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incoming_voice_call"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/taylor_swift_tv"
+        app:layout_constraintStart_toStartOf="@+id/taylor_swift_tv"
+        app:layout_constraintTop_toBottomOf="@+id/taylor_swift_tv"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <ImageView
+        android:id="@+id/decline_icon_1"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/decline_icon"
+        app:layout_constraintBottom_toBottomOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintTop_toBottomOf="@+id/incoming_voice_call_tv_1" />
+
+    <ImageView
+        android:id="@+id/circle_of_accept_icon_first_on_boarding_screen"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/circle_of_accept_icon_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintBottom_toBottomOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintTop_toBottomOf="@id/incoming_voice_call_tv_1"
+        app:layout_constraintStart_toEndOf="@+id/decline_icon_1" />
+
+    <ImageView
+        android:id="@+id/accept_icon_1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/accept_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_of_accept_icon_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/circle_of_accept_icon_first_on_boarding_screen"
+        app:layout_constraintStart_toStartOf="@+id/circle_of_accept_icon_first_on_boarding_screen"
+        app:layout_constraintTop_toTopOf="@+id/circle_of_accept_icon_first_on_boarding_screen" />
+
+    <TextView
+        android:id="@+id/decline_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decline"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@id/decline_icon_1"
+        app:layout_constraintStart_toStartOf="@id/decline_icon_1"
+        app:layout_constraintTop_toBottomOf="@id/decline_icon_1"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <ImageView
+        android:id="@+id/on_boarding_screen_one_face_one"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="@dimen/_273sdp"
+        android:src="@drawable/on_boarding_screen_one_face_one"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/mobile_image_of_first_on_boarding_screen" />
+
+    <TextView
+        android:id="@+id/accept_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@id/accept_icon_1"
+        app:layout_constraintStart_toStartOf="@id/accept_icon_1"
+        app:layout_constraintTop_toBottomOf="@id/accept_icon_1"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/girl_pic_one_on_boarding_screen"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/girl_pic_one_on_boarding_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="@+id/taylor_swift_main_image_on_first_boarding_screen"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/incoming_voice_call_tv_1"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <ImageView
+        android:id="@+id/girl_two_pic_on_borading_screen_one"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/girl_two_pic_on_borading_screen_one"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/incoming_voice_call_tv_1"
+        app:layout_constraintTop_toTopOf="@+id/taylor_swift_tv"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/face_two_on_boarding_screen_one"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/face_two_on_boarding_screen_one"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/accept_tv_1"
+        app:layout_constraintTop_toBottomOf="@+id/accept_tv_1" />
+
+    <TextView
+        android:id="@+id/skip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textColor="@color/skip_tv_color"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/prank_voice_call_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prank_voice_call"
+        android:textColor="@color/on_boarding_screen_one_prank_tv"
+        android:textSize="@dimen/_21ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintStart_toStartOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_image_of_first_on_boarding_screen"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/call_with_your_favourite_celebrities_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call_with_your_favourite_celebrities"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/prank_voice_call_tv"
+        app:layout_constraintStart_toStartOf="@+id/prank_voice_call_tv"
+        app:layout_constraintTop_toBottomOf="@+id/prank_voice_call_tv"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/scrolling_icon_on_boarding_screen_one"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/scrolling_icon_on_boarding_screen_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_with_your_favourite_celebrities_tv"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_with_your_favourite_celebrities_tv"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/next_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="@+id/next_button"
+        app:layout_constraintTop_toTopOf="@+id/next_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Prank Call</string>
+    <string name="prank_call">Prank Call</string>
+    <string name="prank_video_call"><font color = "#2385D4">Prank</font> video Call</string>
+    <string name="see_more">See more</string>
+    <string name="fake_chat"><font color = "#2385D4">Fake</font> Chat</string>
+    <string name="prank_audio_call"><font color = "#2385D4">Prank</font> Audio Call</string>
+    <string name="online">Online</string>
+    <string name="type_a_message">Type a Message</string>
+    <string name="hi_how_are_you">Hi how are you?</string>
+    <string name="want_to_go_on_date">Want to go on Date?</string>
+    <string name="how_are_you_feeling_today">How are you feeling today?</string>
+    <string name="what_s_the_most_romantic_thing_you_have_done">What\'s the most romantic thing you have done?</string>
+    <string name="would_you_do_dance_with_me">Would you do dance with me?</string>
+    <string name="it_s_prank">it\'s Prank!!</string>
+    <string name="video_audio_chat_lot_s_of_fun">Video Audio Chat\nLot\'s of Fun</string>
+    <string name="you_can_have_imaginary_friend_to_save_your_intimity">You can have imaginary friend\nto save your intimity</string>
+    <string name="incoming_voice_call">Incoming Voice Call</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="timer_text">00:00</string>
+    <string name="call_ended">Call Ended</string>
+    <string name="return_tv">Return</string>
+    <string name="this_action_might_contain_ads">This action might contain ads</string>
+    <string name="schedule_a_call">Schedule a Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="voice_call">Voice Call</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="select_ringtone">Select Ringtone</string>
+    <string name="select_call_theme">Select Call Theme</string>
+    <string name="schedule_call">Schedule Call</string>
+    <string name="history">History</string>
+    <string name="taylor_swift">Taylor Swift</string>
+    <string name="skip">Skip</string>
+    <string name="prank_voice_call">Prank Voice Call</string>
+    <string name="call_with_your_favourite_celebrities">Call with your favourite celebrities</string>
+    <string name="next">Next</string>
+    <string name="video_call_full_of_fun_with_different_people">Video Call full of fun with different people</string>
+    <string name="fake">Fake</string>
+    <string name="fun_conversation_with_random_person">Fun conversation with random person</string>
+    <string name="continue_1">Continue</string>
+    <string name="julia">Julia</string>
+    <string name="tap_to_make_voice_call">Tap to make voice call</string>
+    <string name="anna">Anna</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="we_never_use_or_share_your_personal_information_without_your_permission">We never use or share your personal \ninformation without your permission</string>
+    <string name="i_have_read_and_accept_privacy_policy">I have read and accept <font color = "#33A4FF"><u>Privacy Policy</u></font></string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="camera">Camera</string>
+    <string name="microphone_permission">Microphone Permission</string>
+    <string name="microphone">Microphone</string>
+    <string name="me">Me</string>
+    <string name="janny">Janny</string>
+    <string name="rock">Rock</string>
+    <string name="lisa">Lisa</string>
+    <string name="ronaldo">Ronaldo</string>
+    <string name="character">Character</string>
+    <string name="are_you_sure_you_want_to_exit_the_app">Are you sure you want to exit the app?</string>
+    <string name="exit_dialog">Exit App</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="loading_ad" tools:ignore="TypographyEllipsis">Loading ad...</string>
+    <string name="please_wait" tools:ignore="TypographyEllipsis">Please wait...</string>
+    <string name="channel_name">Missed Call</string>
+    <string name="channel_description">Notifications for missed calls</string>
+
+<!--    AD Test Ids-->
+    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="appopen_id" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
+    <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+    <string name="native_id" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+    <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="rewarded_id" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial_id" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+
+    <!--    in_app_purchase_real-->
+
+       <!--<string name="prank_call_monthly_subscription" translatable="false">prank_call_monthly_subscription</string>-->
+
+    <string name="prank_call_monthly_subscription" translatable="false">android.test.purchased</string>
+   </resources>

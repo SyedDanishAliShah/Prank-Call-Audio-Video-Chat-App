@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/on_boarding_background">
+
+    <ImageView
+        android:id="@+id/mobile_pic_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_332sdp"
+        android:src="@drawable/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <ImageView
+        android:id="@+id/character_image_on_boarding_screen_three"
+        android:layout_width="@dimen/_67sdp"
+        android:layout_height="@dimen/_67sdp"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/character_image_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toTopOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/fake_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fake"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/character_image_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/character_image_on_boarding_screen_three"
+        app:layout_constraintTop_toTopOf="@+id/character_image_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <ImageView
+        android:id="@+id/online_icon_on_boarding_screen_three"
+        android:layout_width="@dimen/_6sdp"
+        android:layout_height="@dimen/_6sdp"
+        android:src="@drawable/online_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/fake_tv"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/fake_tv"
+        app:layout_constraintTop_toBottomOf="@+id/fake_tv"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/online_tv_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/online"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/online_icon_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/fake_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/video_call_icon_on_boarding_screen_three"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/video_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/fake_tv"
+        app:layout_constraintTop_toTopOf="@+id/fake_tv"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/voice_call_icon_on_boarding_screen_three"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/voice_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/video_call_icon_on_boarding_screen_three"
+        app:layout_constraintTop_toTopOf="@+id/fake_tv"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/face_two_on_boarding_screen_one_of_on_boarding_screen_three"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginBottom="@dimen/_247sdp"
+        android:src="@drawable/face_two_on_boarding_screen_one"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/mobile_pic_on_boarding_screen_three" />
+
+    <ImageView
+        android:id="@+id/on_boarding_screen_three_message_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/on_boarding_screen_three_message_rectangle"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/character_image_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/first_time_of_message_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/on_boarding_screen_three_message_rectangle"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/on_boarding_screen_three_message_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/on_boarding_screen_three_message_rectangle"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/second_message_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_message_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/second_time_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_time_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/second_message_on_boarding_screen_three"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/second_message_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/second_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/first_auto_generated_message"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/first_auto_generated_message"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <ImageView
+        android:id="@+id/second_auto_generated_message"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/second_auto_generated_message"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/first_auto_generated_message"
+        app:layout_constraintStart_toStartOf="@+id/first_auto_generated_message"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <ImageView
+        android:id="@+id/third_auto_generated_message"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/third_auto_generated_message"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/second_auto_generated_message"
+        app:layout_constraintStart_toStartOf="@+id/second_auto_generated_message"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <ImageView
+        android:id="@+id/fourth_auto_generated_message"
+        android:layout_width="@dimen/_177sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/fourth_auto_generated_message"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/third_auto_generated_message"
+        app:layout_constraintStart_toStartOf="@+id/third_auto_generated_message"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <ImageView
+        android:id="@+id/fifth_auto_generated_message"
+        android:layout_width="@dimen/_164sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/fifth_auto_generated_message"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@+id/fourth_auto_generated_message"
+        app:layout_constraintStart_toStartOf="@+id/fourth_auto_generated_message"
+        app:layout_constraintTop_toBottomOf="@+id/first_time_of_message_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/face_one_of_second_on_boarding_screen_on_boarding_screen_three"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/face_one_of_second_on_boarding_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintEnd_toEndOf="@id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toTopOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/second_face_on_boarding_screen_two_of_on_boarding_screen_three"
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_105sdp"
+        android:layout_marginTop="@dimen/_170sdp"
+        android:src="@drawable/second_face_on_boarding_screen_two"
+        app:layout_constraintEnd_toEndOf="@id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="@id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/face_two_on_boarding_screen_one_of_on_boarding_screen_three" />
+
+    <TextView
+        android:id="@+id/fake_chat_tv_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fake_chat"
+        android:textColor="@color/on_boarding_screen_one_prank_tv"
+        android:textSize="@dimen/_21ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintStart_toStartOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_pic_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/fun_conversation_with_random_person_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fun_conversation_with_random_person"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fake_chat_tv_on_boarding_screen_three"
+        app:layout_constraintStart_toStartOf="@+id/fake_chat_tv_on_boarding_screen_three"
+        app:layout_constraintTop_toBottomOf="@+id/fake_chat_tv_on_boarding_screen_three"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/scrolling_icon_on_boarding_screen_three"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/scrolling_icon_on_boarding_screen_three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fun_conversation_with_random_person_tv"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fun_conversation_with_random_person_tv"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/continue_tv_on_boarding_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_1"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="@+id/next_button"
+        app:layout_constraintTop_toTopOf="@+id/next_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

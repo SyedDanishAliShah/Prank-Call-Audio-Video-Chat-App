@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373740061702",
+    "project_id": "prankcallapp-975d5",
+    "storage_bucket": "prankcallapp-975d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373740061702:android:e8145e586d2075758bef87",
+        "android_client_info": {
+          "package_name": "com.fp.funny.video.call"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv_zbUpSfzqMZRdLMwiTJoJRhMyKHkW5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

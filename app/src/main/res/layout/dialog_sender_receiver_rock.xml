@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/sender_receiver_dialog_box_fake_chat_rock"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/sender_receiver_dialog_box_fake_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/sender_receiver_character_icon_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sender_receiver_character_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintEnd_toEndOf="@+id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintTop_toTopOf="@+id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/sender_receiver_dialog_person_icon_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sender_receiver_dialog_person_icon"
+        app:layout_constraintStart_toStartOf="@id/sender_receiver_character_icon_rock"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_character_icon_rock"
+        app:layout_constraintTop_toTopOf="@id/sender_receiver_character_icon_rock"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_character_icon_rock"
+        />
+
+    <TextView
+        android:id="@+id/me_tv_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/me"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@id/sender_receiver_character_icon_rock"
+        app:layout_constraintTop_toTopOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintVertical_bias="0.32" />
+
+
+    <ImageView
+        android:id="@+id/sender_receiver_dialog_box_view_line_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sender_receiver_dialog_box_view_line"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintStart_toStartOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintTop_toBottomOf="@id/me_tv_rock"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageView
+        android:id="@+id/sender_receiver_character_icon_rock_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sender_receiver_character_icon"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintTop_toBottomOf="@id/sender_receiver_dialog_box_view_line_rock"
+        app:layout_constraintVertical_bias="0.18000002" />
+
+    <ImageView
+        android:id="@+id/sender_receiver_dialog_person_icon_rock_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sender_receiver_dialog_person_icon"
+        app:layout_constraintTop_toTopOf="@id/sender_receiver_character_icon_rock_receiver"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_character_icon_rock_receiver"
+        app:layout_constraintStart_toStartOf="@id/sender_receiver_character_icon_rock_receiver"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_character_icon_rock_receiver"
+        />
+
+    <TextView
+        android:id="@+id/rock_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rock"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintEnd_toEndOf="@id/sender_receiver_dialog_box_fake_chat_rock"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@id/sender_receiver_character_icon_rock_receiver"
+        app:layout_constraintTop_toBottomOf="@id/sender_receiver_dialog_box_view_line_rock"
+        app:layout_constraintVertical_bias="0.19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

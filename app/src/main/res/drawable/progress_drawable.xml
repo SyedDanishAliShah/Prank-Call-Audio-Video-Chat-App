@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="15dp"/>
+            <solid android:color="#C2C2C2"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="15dp"/>
+                <solid android:color="@color/loading_color_for_progress_bar"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

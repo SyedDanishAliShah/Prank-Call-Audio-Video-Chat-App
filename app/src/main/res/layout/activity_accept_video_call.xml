@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/character_video_incoming_video_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:use_controller="false"
+        />
+
+    <TextView
+        android:id="@+id/timer_text_tv_accept_video_call"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/timer_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/character_video_incoming_video_call"
+        app:layout_constraintEnd_toEndOf="@id/character_video_incoming_video_call"
+        app:layout_constraintStart_toStartOf="@id/character_video_incoming_video_call"
+        app:layout_constraintTop_toTopOf="@id/character_video_incoming_video_call"
+        app:layout_constraintVertical_bias="0.07999999" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/container_for_front_and_back_cam_for_video_call_screen"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:src="@drawable/container_for_front_and_back_cam_for_video_call_screen"
+        app:layout_constraintBottom_toBottomOf="@id/character_video_incoming_video_call"
+        app:layout_constraintEnd_toEndOf="@id/character_video_incoming_video_call"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@id/character_video_incoming_video_call"
+        app:layout_constraintTop_toBottomOf="@id/timer_text_tv_accept_video_call"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_items_rectangle_on_boarding_screen_two"
+        app:layout_constraintBottom_toBottomOf="@id/character_video_incoming_video_call"
+        app:layout_constraintEnd_toEndOf="@id/character_video_incoming_video_call"
+        app:layout_constraintStart_toStartOf="@id/character_video_incoming_video_call"
+        app:layout_constraintTop_toBottomOf="@id/container_for_front_and_back_cam_for_video_call_screen"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ImageView
+        android:id="@+id/mic_image_accept_video_call"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/mic_image"
+        app:layout_constraintBottom_toBottomOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintEnd_toEndOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintTop_toTopOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call" />
+
+    <ImageView
+        android:id="@+id/camera_icon_accept_video_call"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:src="@drawable/camera_icon"
+        app:layout_constraintBottom_toBottomOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintEnd_toEndOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@id/mic_image_accept_video_call"
+        app:layout_constraintTop_toTopOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <ImageView
+        android:id="@+id/switch_camera_icon_accept_video_call"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:src="@drawable/switch_camera_icon"
+        app:layout_constraintBottom_toBottomOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintEnd_toEndOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@id/camera_icon_accept_video_call"
+        app:layout_constraintTop_toTopOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call" />
+
+    <ImageView
+        android:id="@+id/decline_icon_accept_video_call"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:src="@drawable/decline_icon"
+        app:layout_constraintBottom_toBottomOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintEnd_toEndOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@id/switch_camera_icon_accept_video_call"
+        app:layout_constraintTop_toTopOf="@id/menu_items_rectangle_on_boarding_screen_two_accept_video_call" />
+</androidx.constraintlayout.widget.ConstraintLayout>

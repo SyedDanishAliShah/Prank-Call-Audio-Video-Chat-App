@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_2">#FFFFFF</color>
+    <color name="blue_color_for_see_more_text">#0E7AD1</color>
+    <color name="grey">#808080</color>
+    <color name="blue_color_for_splash_screen_text">#2286D8</color>
+    <color name="loading_color_for_progress_bar">#33A4FF</color>
+    <color name="dark_grey">#7D7D7D</color>
+    <color name="darker_grey">#676767</color>
+    <color name="skip_tv_color">#707070</color>
+    <color name="on_boarding_screen_one_prank_tv">#2A72C7</color>
+    <color name="prank_audio_call_text_color">#626262</color>
+    <color name="premium_screen_background_color">#CDE9ff</color>
+    <color name="premium_screen_go_premium">#2377C8</color>
+    <color name="schedule_a_call_card_color">#0F4E8B</color>
+    <color name="text_views_color">#2385D4</color>
+</resources>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_icon_arrow_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/schedule_a_call_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_a_call"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/back_icon_arrow_schedule_a_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07777788" />
+
+    <ImageView
+        android:id="@+id/rectangle_scheduling_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_scheduling_a_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/schedule_a_call_tv"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/outer_circle_of_image_of_scheduling_a_call_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outer_circle_of_image_of_scheduling_a_call_card"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_a_call_tv"
+        app:layout_constraintVertical_bias="0.07999999" />
+
+    <ImageView
+        android:id="@+id/circle_of_image_on_scheduling_a_call_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_of_image_on_scheduling_a_call_card"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_a_call_tv"
+        app:layout_constraintVertical_bias="0.08999998" />
+
+    <ImageView
+        android:id="@+id/gallery_icon_of_scheduling_a_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gallery_icon_of_scheduling_a_card"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_of_image_on_scheduling_a_call_card"
+        app:layout_constraintEnd_toEndOf="@+id/circle_of_image_on_scheduling_a_call_card"
+        app:layout_constraintStart_toStartOf="@+id/circle_of_image_on_scheduling_a_call_card"
+        app:layout_constraintTop_toTopOf="@+id/circle_of_image_on_scheduling_a_call_card" />
+
+    <ImageView
+        android:id="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@id/outer_circle_of_image_of_scheduling_a_call_card"
+        app:layout_constraintStart_toStartOf="@id/outer_circle_of_image_of_scheduling_a_call_card"
+        app:layout_constraintTop_toBottomOf="@+id/outer_circle_of_image_of_scheduling_a_call_card"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/video_call_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:text="@string/video_call"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_for_voice_video_call_scheduling_a_call" />
+
+    <TextView
+        android:id="@+id/voice_call_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:text="@string/voice_call"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/video_call_tv"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_for_voice_video_call_scheduling_a_call" />
+
+    <EditText
+        android:id="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enter_a_name_rectangle_schedule_a_call"
+        android:hint="@string/enter_name"
+        android:paddingStart="@dimen/_35sdp"
+        android:textColor="@color/darker_grey"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.01999999"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/enter_a_name_person_icon_scheduling_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enter_a_name_person_icon_scheduling_a_call"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        app:layout_constraintEnd_toEndOf="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.53" />
+
+
+    <ImageView
+        android:id="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enter_a_name_rectangle_schedule_a_call"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        app:layout_constraintStart_toStartOf="@+id/enter_a_name_rectangle_schedule_a_call_et"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <TextView
+        android:id="@+id/tv_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darker_grey"
+        app:layout_constraintBottom_toBottomOf="@id/downwards_arrow_time_picker"
+        app:layout_constraintEnd_toStartOf="@id/downwards_arrow_time_picker"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@id/downwards_arrow_time_picker"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/tv_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darker_grey"
+        app:layout_constraintBottom_toBottomOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintEnd_toStartOf="@id/downwards_arrow_date_picker"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintTop_toTopOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <TimePicker
+        android:id="@+id/time_picker_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_20sdp"
+        android:timePickerMode="clock"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintEnd_toStartOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintHorizontal_bias="0.40"
+        app:layout_constraintStart_toEndOf="@id/tv_time_picker"
+        app:layout_constraintTop_toTopOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintVertical_bias="0.90" />
+
+    <DatePicker
+        android:id="@+id/date_picker_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:elevation="@dimen/_100sdp"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintEnd_toStartOf="@id/tv_date_picker"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintTop_toTopOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <ImageView
+        android:id="@+id/date_and_time_picker_rectangle_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/date_and_time_picker_rectangle_line"
+        app:layout_constraintBottom_toBottomOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintStart_toStartOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@+id/date_and_time_picker_rectangle_schedule_a_call" />
+
+    <ImageView
+        android:id="@+id/downwards_arrow_time_picker"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/downwards_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toStartOf="@+id/date_and_time_picker_rectangle_line"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <ImageView
+        android:id="@+id/downwards_arrow_date_picker"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/downwards_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toEndOf="@id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintTop_toTopOf="@id/date_and_time_picker_rectangle_line"
+        app:layout_constraintVertical_bias="0.65" />
+
+
+    <ImageView
+        android:id="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enter_a_name_rectangle_schedule_a_call"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/date_and_time_picker_rectangle_schedule_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <Spinner
+        android:id="@+id/ringtone_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toStartOf="@+id/downwards_arrow"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@+id/select_a_ringtone_rectangle_schedule_a_call" />
+
+    <ImageView
+        android:id="@+id/downwards_arrow"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/downwards_arrow"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@+id/select_a_ringtone_rectangle_schedule_a_call" />
+
+    <ImageView
+        android:id="@+id/select_call_theme_rectangle_schedule_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enter_a_name_rectangle_schedule_a_call"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintStart_toStartOf="@+id/select_a_ringtone_rectangle_schedule_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_voice_video_call_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/select_call_theme_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_call_theme"
+        android:textColor="@color/darker_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/select_call_theme_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/select_call_theme_rectangle_schedule_a_call"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/select_call_theme_rectangle_schedule_a_call"
+        app:layout_constraintTop_toTopOf="@+id/select_call_theme_rectangle_schedule_a_call" />
+
+    <ImageView
+        android:id="@+id/downwards_arrow_1"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/downwards_arrow"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/select_call_theme_rectangle_schedule_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/select_call_theme_rectangle_schedule_a_call"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/select_call_theme_tv"
+        app:layout_constraintTop_toTopOf="@+id/select_call_theme_rectangle_schedule_a_call" />
+
+
+    <ImageView
+        android:id="@+id/schedule_call_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/schedule_call_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_scheduling_a_call"
+        app:layout_constraintVertical_bias="0.14999999" />
+
+    <TextView
+        android:id="@+id/schedule_call_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_call"
+        android:textColor="@color/white_2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/schedule_call_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/schedule_call_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/schedule_call_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/schedule_call_rectangle" />
+
+    <ImageView
+        android:id="@+id/rectangle_for_history_scheduling_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_for_history_scheduling_a_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/schedule_call_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/schedule_call_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_call_rectangle"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/history_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:textColor="@color/blue_color_for_see_more_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_history_scheduling_a_call"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_for_history_scheduling_a_call"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_for_history_scheduling_a_call"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_for_history_scheduling_a_call" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

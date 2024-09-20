@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"
+        tools:ignore="SelectedPhotoAccess" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/app_icon_prank_call"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/app_icon_prank_call_round"
+        android:theme="@style/Theme.PrankCall"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+
+        <service
+            android:name=".serviceclass.FakeScheduledCallService"
+            android:foregroundServiceType="phoneCall"
+            android:exported="true"/>
+
+        <service android:name=".serviceclass.FakeScheduledVideoCallService"
+            android:foregroundServiceType="phoneCall"
+            android:exported="true"/>
+
+        <activity android:name=".FakeChatActivity"
+            android:exported="true"/>
+
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".IncomingVoiceCallActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AcceptCallActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ScheduleACallActivity"
+            android:exported="true"/>
+
+        <activity android:name=".IncomingPrankCallActivityPrankAudioCall"
+            android:exported="true"/>
+
+        <receiver
+            android:name=".broadcastreceiver.FakeScheduledCallReceiver"
+            android:exported="true"/>
+
+        <activity android:name=".IncomingVideoCallActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AcceptVideoCallActivity"
+            android:exported="true"/>
+
+        <activity android:name=".HistoryActivity"
+            android:exported="true"/>
+
+        <activity android:name=".in_app_purchase.PremiumActivity"
+            android:exported="true"/>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~9257395921"/>
+
+
+    </application>
+
+</manifest>

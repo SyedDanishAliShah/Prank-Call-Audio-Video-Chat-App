@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/premium_screen_background_color"
+   >
+
+    <ImageView
+        android:id="@+id/premium_screen_top_image"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_210sdp"
+        android:src="@drawable/premium_screen_top_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/blur_part_of_premium_screen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:src="@drawable/blur_part_of_premium_screen"
+        android:layout_marginTop="@dimen/_170sdp"
+        app:layout_constraintEnd_toEndOf="@id/premium_screen_top_image"
+        app:layout_constraintStart_toStartOf="@id/premium_screen_top_image"
+        app:layout_constraintTop_toTopOf="@id/premium_screen_top_image"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <ImageView
+        android:id="@+id/go_premium_tv"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/go_premium_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/blur_part_of_premium_screen"
+        app:layout_constraintStart_toStartOf="@id/blur_part_of_premium_screen"
+        app:layout_constraintTop_toTopOf="@id/blur_part_of_premium_screen"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ImageView
+        android:id="@+id/tick_icon_premium_screen_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick_icon_premium_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/go_premium_tv"
+        app:layout_constraintVertical_bias="0.03999998" />
+
+    <ImageView
+        android:id="@+id/remove_ads_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/remove_ads_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@id/tick_icon_premium_screen_one"
+        app:layout_constraintTop_toBottomOf="@id/go_premium_tv"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/tick_icon_premium_screen_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick_icon_premium_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tick_icon_premium_screen_one"
+        app:layout_constraintVertical_bias="0.03999998" />
+
+    <ImageView
+        android:id="@+id/unlimited_fake_chats_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unlimited_fake_chats_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@id/tick_icon_premium_screen_two"
+        app:layout_constraintTop_toBottomOf="@id/remove_ads_tv"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <ImageView
+        android:id="@+id/tick_icon_premium_screen_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick_icon_premium_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tick_icon_premium_screen_two"
+        app:layout_constraintVertical_bias="0.03999998"
+
+        />
+
+    <ImageView
+        android:id="@+id/unlock_video_calls_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unlock_video_calls_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@id/tick_icon_premium_screen_three"
+        app:layout_constraintTop_toBottomOf="@id/unlimited_fake_chats_tv"
+        app:layout_constraintVertical_bias="0.053"
+
+        />
+
+    <ImageView
+        android:id="@+id/rectangle_premium_screen_popular_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/rectangle_premium_screen_popular_plan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unlock_video_calls_tv"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <ImageView
+        android:id="@+id/saving_box_premium"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/saving_box_premium"
+        android:layout_marginTop="@dimen/_312sdp"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/save_20_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/save_20_tv"
+        app:layout_constraintBottom_toBottomOf="@id/saving_box_premium"
+        app:layout_constraintEnd_toEndOf="@id/saving_box_premium"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@id/saving_box_premium"
+        app:layout_constraintTop_toTopOf="@id/saving_box_premium"
+        app:layout_constraintVertical_bias="0.47000002" />
+
+    <ImageView
+        android:id="@+id/popular_plan_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popular_plan_tv"
+        android:layout_marginBottom="@dimen/_140sdp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintEnd_toEndOf="@id/saving_box_premium"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@id/saving_box_premium" />
+
+    <ImageView
+        android:id="@+id/get_unlimited_options_for_one_month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/get_unlimited_options_for_one_month_tv"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintEnd_toEndOf="@id/popular_plan_tv"
+        app:layout_constraintStart_toStartOf="@id/popular_plan_tv"
+        app:layout_constraintTop_toBottomOf="@id/popular_plan_tv"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <ImageView
+        android:id="@+id/twenty_dollars_tv_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/twenty_dollars_tv_premium"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintEnd_toEndOf="@id/get_unlimited_options_for_one_month_tv"
+        app:layout_constraintStart_toStartOf="@id/get_unlimited_options_for_one_month_tv"
+        app:layout_constraintTop_toBottomOf="@id/get_unlimited_options_for_one_month_tv"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/cross_line_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross_line_premium"
+        app:layout_constraintTop_toTopOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintBottom_toBottomOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintStart_toStartOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintEnd_toEndOf="@id/twenty_dollars_tv_premium"
+        />
+
+    <ImageView
+        android:id="@+id/only_14_dollar_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/only_14_dollar_premium"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintEnd_toEndOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintStart_toStartOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintTop_toBottomOf="@id/twenty_dollars_tv_premium"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <ImageView
+        android:id="@+id/subscribe_now_rectangle_premium"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/subscribe_now_rectangle_premium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintStart_toStartOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_premium_screen_popular_plan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/cancel_anytime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel_anytime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/subscribe_now_rectangle_premium"
+        app:layout_constraintStart_toStartOf="@id/subscribe_now_rectangle_premium"
+        app:layout_constraintTop_toBottomOf="@id/subscribe_now_rectangle_premium"
+        app:layout_constraintVertical_bias="0.09999998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
